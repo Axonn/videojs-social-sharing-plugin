@@ -1,0 +1,111 @@
+﻿div.vjs-control-bar div.vjs-sharing-button div
+{
+    width:auto;
+    background: none;  /*url("http://rc-video-encoding-samples.s3.amazonaws.com/videojsPluginTests/share.png") no-repeat scroll 7px 0px transparent;*/
+    font-family: Atlantis;
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-quality-text
+{
+    font-size: 1.375em;
+    position: relative;
+    bottom: -0.05em;
+    -webkit-text-stroke: 0.1px;
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-menu-item
+{
+    padding: 0px 0px 0px 0.4em;
+    height: 1.35em;
+    margin: 0 0;
+    opacity: 1;
+    background: none repeat scroll 0 0 #111111;
+    font-family: Arial, sans-serif;
+    font-size: 1.333em;
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-menu-item:hover
+{
+    background: none repeat scroll 0 0 #BBB;
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-menu-item img
+{
+    float:left;
+    margin-top:0.2em;
+    height: 1em;
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-share-network
+{
+    margin-left:0.3em;
+    margin-top:0em;
+    background:none;
+    float:left;
+    font-family: Arial, sans-serif;
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-share-network span
+{
+    font-family: Atlantis;
+    margin-right: 0.3em;
+    color: #34506B;
+    z-index: 2;
+    position: relative;
+}
+
+div.vjs-control-bar div.vjs-sharing-button span.vjs-share-icon-background {   
+    left: 1.4em;
+    top: 0;
+    float: left;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 0.9em; 
+
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-menu
+{
+    width:9.0em;
+    left:-3em;
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.9;
+}
+
+div.vjs-control-bar div.vjs-sharing-button .vjs-menu-title
+{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 0 0;
+    padding: 0.2em 0 0.1em;
+    text-transform: none;
+    font-family: Arial, sans-serif;
+    border-bottom: 0.2em solid #111111;
+}
+
+div.vjs-control-bar div.vjs-sharing-button li.vjs-menu-arrow
+{
+    padding: 0 0 0 2.4em;
+}
+
+div.vjs-control-bar div.vjs-sharing-button li.vjs-menu-arrow:hover
+{
+    background: transparent;
+    cursor: default;
+}
+
+div.vjs-control-bar div.vjs-sharing-button div.vjs-menu-arrow
+{
+    height: 0;
+    line-height: 3em;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    border-color: #111111 transparent transparent;
+    border-style: solid;
+    border-width: 1.4em 1.4em 0;
+}
+
