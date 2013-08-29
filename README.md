@@ -1,0 +1,2 @@
+videojs-social-sharing-plugin
+=============================
