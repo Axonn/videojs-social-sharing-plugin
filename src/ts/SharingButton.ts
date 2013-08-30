@@ -1,17 +1,17 @@
-﻿///<reference path='../../../definitions/VideoJS.d.ts'/>
-///<reference path='../../../definitions/JQuery.d.ts'/> 
+﻿///<reference path='../definitions/VideoJS.d.ts'/>
+///<reference path='../definitions/JQuery.d.ts'/> 
 ///<reference path='SharingMenuItem.ts'/>
 ///<reference path='SharingMenu.ts'/>
-///<reference path='../vjsplugin/Component.ts'/>
+///<reference path='../../bower_components/videojs-plugin-components/vjsplugincomponents.d.ts'/>
 
 module Sharing {
-    export class SharingButton extends VjsPlugin.Component{
+    export class SharingButton extends VjsPluginComponents.Component{
         kind: string;
         className: string;
         buttonText: string;
         menu: Sharing.SharingMenu;
 
-        constructor(player: VjsPlugin.IPlayer, sources: Sharing.IShareSource[]) {
+        constructor(player: VjsPluginComponents.IPlayer, sources: Sharing.IShareSource[]) {
             this.kind = "sharing";
             this.className = "vjs-sharing-button";
             this.buttonText = "";

@@ -1,18 +1,16 @@
-///<reference path='../../../definitions/VideoJS.d.ts'/>
-///<reference path='../../../definitions/JQuery.d.ts'/> 
+///<reference path='../definitions/VideoJS.d.ts'/>
+///<reference path='../definitions/JQuery.d.ts'/> 
 ///<reference path='SharingMenuItem.ts'/>
-///<reference path='SharingMenu.ts'/>
-///<reference path='../vjsplugin/Menu.ts'/>
-///<reference path='../vjsplugin/IPlayer.ts'/>
+///<reference path='../../bower_components/videojs-plugin-components/vjsplugincomponents.d.ts'/>
 ///<reference path='IShareSource.ts'/>
 
 module Sharing {
-    export class SharingMenu extends VjsPlugin.Menu {
+    export class SharingMenu extends VjsPluginComponents.Menu {
         kind: string = "share";
         className: string = "vjs-share-button";
         buttonText: string = "";
 
-        constructor(player: VjsPlugin.IPlayer, sources: Sharing.IShareSource[]) {
+        constructor(player: VjsPluginComponents.IPlayer, sources: Sharing.IShareSource[]) {
             super(player);
 
             var listItem = jQuery(document.createElement("li")).addClass("vjs-menu-title").html(this.kind);

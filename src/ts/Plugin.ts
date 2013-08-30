@@ -1,8 +1,7 @@
 ///<reference path='SharingButton.ts'/>
 ///<reference path='SharingMenuItem.ts'/>
-///<reference path='../../../definitions/JQuery.d.ts'/>
-///<reference path='../common/Timer.ts'/>
-///<reference path='../common/DateService.ts'/>
+///<reference path='../definitions/JQuery.d.ts'/>
+///<reference path='../../bower_components/videojs-plugin-components/vjsplugincomponents.d.ts'/>
 ///<reference path='DefaultShareSources.ts'/>
 
 module Sharing {
@@ -14,7 +13,7 @@ module Sharing {
         }
 
         enable() {
-            var button = new Sharing.SharingButton(new VjsPlugin.Player(this._player), Sharing.defaultDefinitions);
+            var button = new Sharing.SharingButton(new VjsPluginComponents.Player(this._player), Sharing.defaultDefinitions);
             this._player["controlBar"].addChild(button);
         }
     }

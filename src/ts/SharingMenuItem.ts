@@ -1,15 +1,13 @@
-///<reference path='../../../definitions/VideoJS.d.ts'/>
-///<reference path='../../../definitions/JQuery.d.ts'/>
-///<reference path='../vjsplugin/IPlayer.ts'/>
-///<reference path='../vjsplugin/Player.ts'/>
-///<reference path='../vjsplugin/MenuItem.ts'/>
+///<reference path='../definitions/VideoJS.d.ts'/>
+///<reference path='../definitions/JQuery.d.ts'/>
+///<reference path='../../bower_components/videojs-plugin-components/vjsplugincomponents.d.ts'/>
 ///<reference path='IShareSource.ts'/>
 
 module Sharing {
-    export class SharingMenuItem extends VjsPlugin.MenuItem {
+    export class SharingMenuItem extends VjsPluginComponents.MenuItem {
         _source: Sharing.IShareSource;
 
-        constructor(player: VjsPlugin.IPlayer, source: Sharing.IShareSource) {
+        constructor(player: VjsPluginComponents.IPlayer, source: Sharing.IShareSource) {
             this._source = source;
 
             super(player);
@@ -32,7 +30,7 @@ module Sharing {
                 innerHTML: "<img class='vjs-share-icon' src='" +this._source.imageSource + "' />" + "<div class='vjs-share-network'>" +this._source.label + "</div>"
                 //innerHTML: "<div class='vjs-share-network'><span data-icon='" + this._source.icon + "'></span><span class='vjs-share-icon-background' data-icon='&#61829;'></span>" + this._source.label + "</div>"
             }, props));
-        };
+        }
 
 
     }
