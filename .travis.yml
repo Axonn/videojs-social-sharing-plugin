@@ -5,15 +5,15 @@ before_script:
 - bower install
 env:
   global:
-  - secure: EyQ+4g03UKWmWZCjWsVpsj1FgYI8YN2ocRBzAwAkgPhN0BAx8BrOvlbKVyHWN/jArNmP/RyTXDeNEb5H/nszgiwptV1K4R3Cvl2Rwy73OUiYMlI5P3BbCdiDcJXwl7YakmO3g+5UEaRjVcXaLq3/awc9h5gdgRA5CrS/CVO/LeM=
+  - secure: BA1ID0r9vNj9I3xHHrSbZhrcOdaaTWeaKwiiU22hEny4Vm3HbC+7H/DCGmrQmLxaKlUGj5EUvIohegAu0nbvyXo+lzbKbkMtJ/5dn8JsFtV6NzDwL8wH6kqVMX6ZsA3fhn98G5wft+mi90bsDkAvRxlMFHH9ecsiDUWnHE5P6bU=
   - GH_OWNER: Axonn
   - GH_PROJECT_NAME: videojs-social-sharing-plugin
 after_success:
 - if git checkout master; then git checkout -b master; fi
 - cp build/js/vjssocialsharingplugin.js vjssocialsharingplugin.js
-- cp build/js/vjssocialsharingplugin.d.ts vjssocialsharingplugin.d.ts 
+- cp build/js/vjssocialsharingplugin.d.ts vjssocialsharingplugin.d.ts
 - git add -f vjssocialsharingplugin.js
-- git add -f vjssocialsharingplugin.d.ts 
+- git add -f vjssocialsharingplugin.d.ts
 - git config user.name "travis-ci"
 - git config user.email "corwin.tomkinson@adfero.co.uk"
 - git commit -am "add build files to master [ci skip]"
