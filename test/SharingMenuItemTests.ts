@@ -69,6 +69,7 @@ describe("sharing menu item", function () {
             off: jasmine.createSpy("player.off"),
             one: jasmine.createSpy("player.one"),
             show: jasmine.createSpy("player.show"),
+			pause: jasmine.createSpy("player.pause"),
             hide: jasmine.createSpy("player.hide"),
             width: jasmine.createSpy("player.width"),
             height: jasmine.createSpy("player.height"),
